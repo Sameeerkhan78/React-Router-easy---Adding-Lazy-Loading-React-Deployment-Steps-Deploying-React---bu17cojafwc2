@@ -1,5 +1,18 @@
 import React from "react";
-const NotFound = () => {
-  return <div id="not-found-page">Not found page</div>;
+import { Link } from "react-router-dom";
+
+const NavBar = () => {
+  return (
+    <nav>
+      <ul>
+          <li >
+            <Link to="/home" className="home-link">Home Page</Link>
+          </li>
+        <li>
+          <Link to="/"  className="index-link">Index Page</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 };
-export default NotFound;
+export default NavBar;
